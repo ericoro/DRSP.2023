@@ -27,7 +27,10 @@ summarise(data,
           .by=Destination)
 mean_duration2 <-summarise(data,
                            mean_duration= mean(Duration, na.rm =T),
-                           .by=Destination)
+
+                                                 .by=Destination)
+library(dplyr)
+arrange(data, Destination)
 
 
 ##Data Table 
